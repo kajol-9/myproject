@@ -11,7 +11,6 @@ Welcome to the **Multilingual FAQ API**! This Django-based project allows users 
 - ✅ **Admin Panel for Managing FAQs**
 - ✅ **Unit Testing & Code Quality Checks**
 - ✅ **Docker Support** 🐳
-- ✅ **Deployment to AWS/Heroku** (Optional)
 
 ---
 
@@ -20,7 +19,7 @@ Follow these steps to set up and run the project locally.
 
 ### 1️⃣ Clone the Repository
 ```
-git clone https://github.com/your-username/multilingual-faq-api.git
+git clone [https://github.com/kajol-9/myproject.git]
 cd multilingual-faq-api
 ```
 
@@ -99,53 +98,6 @@ docker-compose down
 
 ---
 
-## 🚀 Deploying to AWS/Heroku 🌍
-
-### 1️⃣ Install the Heroku CLI (If not installed)
-```
-curl https://cli-assets.heroku.com/install.sh | sh
-```
-
-### 2️⃣ Login to Heroku
-```
-heroku login
-```
-
-### 3️⃣ Create a Heroku App
-```
-heroku create your-app-name
-```
-
-### 4️⃣ Set Environment Variables on Heroku
-```
-heroku config:set SECRET_KEY=your-secret-key
-heroku config:set DEBUG=False
-heroku config:set REDIS_URL=redis://your-redis-url
-heroku config:set GOOGLE_TRANSLATE_API_KEY=your-google-api-key
-```
-
-### 5️⃣ Push the Code to Heroku
-```
-git push heroku main
-```
-
-### 6️⃣ Run Database Migrations
-```
-heroku run python manage.py migrate
-```
-
-### 7️⃣ Scale the Web Process
-```
-heroku ps:scale web=1
-```
-
-### 8️⃣ Open the App
-```
-heroku open
-```
-
----
-
 ## 📜 Contribution Guidelines
 1. Fork the repository 🍴
 2. Create a new branch: `git checkout -b feature-branch`
@@ -161,13 +113,5 @@ git push origin feature-branch
 
 ---
 
-## 📄 License
-This project is open-source and available under the MIT License.
 
----
-
-## 🔗 Contact
-For any questions or suggestions, feel free to reach out! 📩
-
-Happy Coding! 🚀
 
