@@ -19,26 +19,26 @@ Welcome to the *Multilingual FAQ API*! This Django-based project allows users to
 Follow these steps to set up and run the project locally.
 
 ### 1️⃣ Clone the Repository
-sh
+
 git clone https://github.com/your-username/multilingual-faq-api.git
 cd multilingual-faq-api
 
 
 ### 2️⃣ Create a Virtual Environment & Activate It
-sh
+
 python -m venv venv
 source venv/bin/activate  # On Mac/Linux
 venv\Scripts\activate     # On Windows
 
 
 ### 3️⃣ Install Dependencies
-sh
+
 pip install -r requirements.txt
 
 
 ### 4️⃣ Set Up Environment Variables
 Create a .env file and add:
-env
+
 SECRET_KEY=your-secret-key
 DEBUG=True
 ALLOWED_HOSTS=localhost, 127.0.0.1
@@ -47,21 +47,21 @@ GOOGLE_TRANSLATE_API_KEY=your-google-api-key
 
 
 ### 5️⃣ Apply Migrations & Collect Static Files
-sh
+
 python manage.py migrate
 python manage.py collectstatic --noinput
 
 
 ### 6️⃣ Create a Superuser for Admin Panel
-sh
+
 python manage.py createsuperuser
 
 
 ### 7️⃣ Run the Development Server
-sh
+
 python manage.py runserver
 
-Access the API at: http://127.0.0.1:8000/api/faqs/ 📌
+Access the API at: http://127.0.0.1:8000/api/faqs/ 📌  
 Access the Admin Panel at: http://127.0.0.1:8000/admin/ 🔑
 
 ---
@@ -79,7 +79,7 @@ Access the Admin Panel at: http://127.0.0.1:8000/admin/ 🔑
 ---
 
 ## 🛠 Running Tests
-sh
+
 pytest
 
 
@@ -88,12 +88,12 @@ pytest
 ## 🛠 Docker Setup 🐳
 
 ### 1️⃣ Build and Run the Docker Containers
-sh
+
 docker-compose up --build
 
 
 ### 2️⃣ Stop the Containers
-sh
+
 docker-compose down
 
 
@@ -102,22 +102,22 @@ docker-compose down
 ## 🚀 Deploying to AWS/Heroku 🌍
 
 ### 1️⃣ Install the Heroku CLI (If not installed)
-sh
+
 curl https://cli-assets.heroku.com/install.sh | sh
 
 
 ### 2️⃣ Login to Heroku
-sh
+
 heroku login
 
 
 ### 3️⃣ Create a Heroku App
-sh
+
 heroku create your-app-name
 
 
 ### 4️⃣ Set Environment Variables on Heroku
-sh
+
 heroku config:set SECRET_KEY=your-secret-key
 heroku config:set DEBUG=False
 heroku config:set REDIS_URL=redis://your-redis-url
@@ -125,22 +125,22 @@ heroku config:set GOOGLE_TRANSLATE_API_KEY=your-google-api-key
 
 
 ### 5️⃣ Push the Code to Heroku
-sh
+
 git push heroku main
 
 
 ### 6️⃣ Run Database Migrations
-sh
+
 heroku run python manage.py migrate
 
 
 ### 7️⃣ Scale the Web Process
-sh
+
 heroku ps:scale web=1
 
 
 ### 8️⃣ Open the App
-sh
+
 heroku open
 
 
@@ -149,8 +149,14 @@ heroku open
 ## 📜 Contribution Guidelines
 1. Fork the repository 🍴
 2. Create a new branch: git checkout -b feature-branch
-3. Commit your changes: git commit -m "feat: Add a new feature"
-4. Push to the branch: git push origin feature-branch
+3. Commit your changes:
+
+git commit -m "feat: Add a new feature"
+
+4. Push to the branch:
+
+git push origin feature-branch
+
 5. Open a Pull Request 🎉
 
 ---
@@ -164,4 +170,3 @@ This project is open-source and available under the MIT License.
 For any questions or suggestions, feel free to reach out! 📩
 
 Happy Coding! 🚀
- 
